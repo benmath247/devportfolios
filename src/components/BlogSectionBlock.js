@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogSectionBlock = ({ blogSection }) => {
+const BlogSectionBlock = ({ blogSection, primaryColor }) => {
   if (!blogSection) return null;
 
   const { blog_posts, title, description, background_color_override } =
@@ -28,7 +28,11 @@ const BlogSectionBlock = ({ blogSection }) => {
                   <p className="card-text">{post.subtitle}</p>
                   <a
                     href={post.html_file}
-                    className="btn btn-primary"
+                    className="btn"
+                    style={{
+                      backgroundColor: primaryColor,
+                      color: "#fff",
+                    }}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

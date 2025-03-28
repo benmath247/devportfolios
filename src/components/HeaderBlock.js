@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderBlock = ({ headerBlock }) => {
+const HeaderBlock = ({ headerBlock, primaryColor }) => {
   if (!headerBlock) return null;
 
   const {
@@ -38,8 +38,11 @@ const HeaderBlock = ({ headerBlock }) => {
       {button_text && button_link && (
         <a
           href={button_link}
-          className="btn btn-primary mt-3"
-          style={{ backgroundColor: button_color_override }}
+          className="btn mt-3"
+          style={{
+            backgroundColor: button_color_override || primaryColor,
+            color: "#fff",
+          }}
         >
           {button_text}
         </a>

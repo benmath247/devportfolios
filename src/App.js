@@ -13,9 +13,19 @@ function App({ siteConfig }) {
           style={{ backgroundColor: siteConfig.color_scheme.background_color }}
         >
           <Navigation navigation={siteConfig.navigation} />
-          <HeaderBlock headerBlock={siteConfig.header_block} />
-          <BlogSectionBlock blogSection={siteConfig.blog_section_block} />
-          <ProjectsBlock projectsBlock={siteConfig.projects_block} />
+          <HeaderBlock
+            headerBlock={siteConfig.header_block}
+            primaryColor={siteConfig.color_scheme.primary_color}
+          />
+          <BlogSectionBlock
+            blogSection={siteConfig.blog_section_block}
+            primaryColor={siteConfig.color_scheme.primary_color}
+          />
+          <ProjectsBlock
+            projectsBlock={siteConfig.projects_block}
+            primaryColor={siteConfig.color_scheme.primary_color}
+            secondaryColor={siteConfig.color_scheme.secondary_color}
+          />
         </div>
       ) : (
         <p className="text-center mt-5">Loading site configuration...</p>

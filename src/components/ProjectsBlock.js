@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectsBlock = ({ projectsBlock }) => {
+const ProjectsBlock = ({ projectsBlock, primaryColor, secondaryColor }) => {
   if (!projectsBlock) return null;
 
   const { project_items, title, description, background_color_override } =
@@ -28,7 +28,11 @@ const ProjectsBlock = ({ projectsBlock }) => {
                   <p className="card-text">{project.description}</p>
                   <a
                     href={project.link}
-                    className="btn btn-primary me-2"
+                    className="btn me-2"
+                    style={{
+                      backgroundColor: primaryColor,
+                      color: "#fff",
+                    }}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -36,7 +40,11 @@ const ProjectsBlock = ({ projectsBlock }) => {
                   </a>
                   <a
                     href={project.github_link}
-                    className="btn btn-secondary"
+                    className="btn"
+                    style={{
+                      backgroundColor: secondaryColor,
+                      color: "#fff",
+                    }}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
