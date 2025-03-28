@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navigation = ({ navigation }) => {
+const Navigation = ({ navigation, colorScheme }) => {
   if (!navigation) return null;
 
   const {
@@ -12,6 +12,8 @@ const Navigation = ({ navigation }) => {
     link_color_override,
     link_color_on_hover,
   } = navigation;
+
+  const accentColor = colorScheme.accent_color;
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,16 +40,24 @@ const Navigation = ({ navigation }) => {
           ))}
         </ul>
         <div className="d-flex">
-          <a href={github_link} className="btn btn-link me-2">
+          <a href={github_link} className="btn" style={{ color: accentColor }}>
             GitHub
           </a>
-          <a href={linkedin_link} className="btn btn-link me-2">
+          <a
+            href={linkedin_link}
+            className="btn"
+            style={{ color: accentColor }}
+          >
             LinkedIn
           </a>
-          <a href={`mailto:${email_link}`} className="btn btn-link me-2">
+          <a
+            href={`mailto:${email_link}`}
+            className="btn"
+            style={{ color: accentColor }}
+          >
             Email
           </a>
-          <a href={resume_link} className="btn btn-link">
+          <a href={resume_link} className="btn" style={{ color: accentColor }}>
             Resume
           </a>
         </div>

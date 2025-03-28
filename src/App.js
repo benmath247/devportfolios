@@ -12,7 +12,10 @@ function App({ siteConfig }) {
         <div
           style={{ backgroundColor: siteConfig.color_scheme.background_color }}
         >
-          <Navigation navigation={siteConfig.navigation} />
+          <Navigation
+            navigation={siteConfig.navigation}
+            colorScheme={siteConfig.color_scheme}
+          />
           <HeaderBlock
             headerBlock={siteConfig.header_block}
             primaryColor={siteConfig.color_scheme.primary_color}
