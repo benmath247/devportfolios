@@ -10,6 +10,7 @@ const BlogSectionBlock = ({ blogSection, primaryColor }) => {
     <section
       className="py-5"
       style={{ backgroundColor: background_color_override }}
+      id="blog"
     >
       <div className="container">
         <h2 className="mb-4">{title}</h2>
@@ -33,8 +34,6 @@ const BlogSectionBlock = ({ blogSection, primaryColor }) => {
                       backgroundColor: primaryColor,
                       color: "#fff",
                     }}
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
                     Read More
                   </a>

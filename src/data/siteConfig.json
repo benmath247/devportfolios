@@ -31,27 +31,27 @@
     "navigation_items": [
       {
         "id": 13,
-        "text": "college",
-        "link": "https://www.wilson-wade.com/",
+        "text": "Home",
+        "link": "/",
         "navigation": 5
       },
       {
         "id": 14,
-        "text": "goal",
-        "link": "http://smith-ibarra.com/",
+        "text": "Blog",
+        "link": "/#blog",
         "navigation": 5
       },
       {
         "id": 15,
-        "text": "yourself",
-        "link": "http://morris-lozano.com/",
+        "text": "Projects",
+        "link": "/#projects",
         "navigation": 5
       }
     ],
     "style": "top_bar",
-    "github_link": "https://www.williams.net/",
-    "linkedin_link": "http://horton-young.org/",
-    "email_link": "lford@example.org",
+    "github_link": "https://www.github.com/jmath1",
+    "linkedin_link": "http://linkedin.com/in/jonathanmath",
+    "email_link": "yonimath81@gmail.com",
     "resume_link": "http://www.spencer.com/",
     "icon_animation": "none",
     "link_color_override": null,
@@ -93,7 +93,7 @@
     ],
     "order": 1,
     "name": "space",
-    "title": "Huge market.",
+    "title": "Blog",
     "description": "Bad the reflect article station standard top. Wait growth certainly race card home pick. Yet price nice although.",
     "background_color_override": null,
     "background_style": "solid",
@@ -129,14 +129,14 @@
         "description": "Trouble far approach last. Fight turn whose next economic.",
         "image": "http://0.0.0.0/media/project_images/projectitem_1Qxz2I0.jpg",
         "link": "http://www.stone.net/",
-        "github_link": "http://simon.org/",
+        "github_link": "http://github.com/jmath1",
         "date_created": "2025-03-28T22:55:08.644152Z",
         "projects_block": 16
       }
     ],
     "order": 2,
     "name": "start",
-    "title": "Fire.",
+    "title": "Projects",
     "description": "Thank discussion call old.",
     "background_color_override": null,
     "background_style": "solid",

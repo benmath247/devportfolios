@@ -10,6 +10,7 @@ const ProjectsBlock = ({ projectsBlock, primaryColor, secondaryColor }) => {
     <section
       className="py-5"
       style={{ backgroundColor: background_color_override }}
+      id="projects"
     >
       <div className="container">
         <h2 className="mb-4">{title}</h2>

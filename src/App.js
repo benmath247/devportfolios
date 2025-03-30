@@ -1,34 +1,40 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import HeaderBlock from "./components/HeaderBlock";
 import Navigation from "./components/Navigation";
-import BlogSectionBlock from "./components/BlogSectionBlock";
-import ProjectsBlock from "./components/ProjectsBlock";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
+import Home from "./pages/Home";
+import BlogPost from "./pages/BlogPost";
 
 function App({ siteConfig }) {
   return (
-    <div>
+    <div
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        minHeight: "100vh",
+      }}
+    >
       {siteConfig ? (
         <div
-          style={{ backgroundColor: siteConfig.color_scheme.background_color }}
+          style={{
+            position: "relative",
+            zIndex: 1,
+          }}
         >
-          <Navigation
-            navigation={siteConfig.navigation}
-            colorScheme={siteConfig.color_scheme}
-          />
-          <HeaderBlock
-            headerBlock={siteConfig.header_block}
-            primaryColor={siteConfig.color_scheme.primary_color}
-          />
-          <BlogSectionBlock
-            blogSection={siteConfig.blog_section_block}
-            primaryColor={siteConfig.color_scheme.primary_color}
-          />
-          <ProjectsBlock
-            projectsBlock={siteConfig.projects_block}
-            primaryColor={siteConfig.color_scheme.primary_color}
-            secondaryColor={siteConfig.color_scheme.secondary_color}
-          />
+          <Router>
+            <Navigation
+              navigation={siteConfig.navigation}
+              colorScheme={siteConfig.color_scheme}
+            />
+            <Routes>
+              <Route path="/" element={<Home siteConfig={siteConfig} />} />
+              <Route
+                path="/blog/:slug"
+                element={<BlogPost siteConfig={siteConfig} />}
+              />
+            </Routes>
+          </Router>
         </div>
       ) : (
         <p className="text-center mt-5">Loading site configuration...</p>

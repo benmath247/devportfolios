@@ -1,6 +1,3 @@
-// use the axious library to make a call to backend/portfolios/process.env.REACT_APP_PORTFOLIO_ID
-// save it as a context and return it to the component
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 
