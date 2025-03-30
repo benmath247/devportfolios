@@ -27,7 +27,7 @@ const BlogSectionBlock = ({ blogSection, primaryColor }) => {
                   <h5 className="card-title">{post.title}</h5>
                   <p className="card-text">{post.subtitle}</p>
                   <a
-                    href={post.html_file}
+                    href={`/blog/${post.slug}`}
                     className="btn"
                     style={{
                       backgroundColor: primaryColor,
