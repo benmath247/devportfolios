@@ -9,7 +9,7 @@ function Home({ siteConfig }) {
     <div>
       {siteConfig ? (
         <div
-        //style={{ backgroundColor: siteConfig.color_scheme.background_color }}
+          style={{ backgroundColor: siteConfig.color_scheme.background_color }}
         >
           <HeaderBlock
             headerBlock={siteConfig.header_block}
