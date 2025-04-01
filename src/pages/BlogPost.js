@@ -33,7 +33,14 @@ const BlogPost = ({ siteConfig }) => {
       </h1>
 
       {post.subtitle && <p>{post.subtitle}</p>}
-      <img src={post.image} alt={post.title} className="img-fluid mb-3" />
+      <div className="text-center">
+        <img
+          src={post.image}
+          alt={post.title}
+          className="img-fluid mb-3"
+          style={{ height: "500px" }}
+        />
+      </div>
       <div
         className="blog-content"
         dangerouslySetInnerHTML={{ __html: htmlContent }}
