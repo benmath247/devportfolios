@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogSectionBlock = ({ blogSection, primaryColor }) => {
+const BlogSectionBlock = ({ blogSection, primaryColor, colorScheme }) => {
   if (!blogSection) return null;
 
   const { blog_posts, title, description, background_color_override } =
@@ -9,7 +9,10 @@ const BlogSectionBlock = ({ blogSection, primaryColor }) => {
   return (
     <section
       className="py-5"
-      style={{ backgroundColor: background_color_override }}
+      style={{
+        backgroundColor: background_color_override,
+        color: colorScheme.text_color,
+      }}
       id="blog"
     >
       <div className="container">

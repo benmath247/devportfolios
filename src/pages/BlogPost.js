@@ -1,32 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const BlogPost = ({ siteConfig }) => {
   const { slug } = useParams();
-
-  if (!siteConfig) return null;
+  const [htmlContent, setHtmlContent] = useState(null);
 
   const post = siteConfig.blog_section_block.blog_posts.find(
     (p) => p.slug === slug
   );
+
+  useEffect(() => {
+    if (post?.html_file) {
+      // Fetch the HTML file content
+      fetch(post.html_file)
+        .then((response) => response.text())
+        .then((data) => setHtmlContent(data))
+        .catch((error) => console.error("Error fetching blog content:", error));
+    }
+  }, [post]);
 
   if (!post) {
     return <p className="text-center mt-5">Blog post not found.</p>;
   }
 
   return (
-    <div className="container py-5">
-      <h1 style={{ color: siteConfig.color_scheme.primary_color }}>
+    <div
+      className="container py-5"
+      style={{ backgroundColor: siteConfig.color_scheme.background_color }}
+    >
+      <h1 style={{ color: siteConfig.color_scheme.text_color }}>
         {post.title}
       </h1>
-      <p>{post.subtitle}</p>
+
+      {post.subtitle && <p>{post.subtitle}</p>}
       <img src={post.image} alt={post.title} className="img-fluid mb-3" />
-      <iframe
-        src={post.html_file}
-        title={post.title}
-        width="100%"
-        height="600px"
-        style={{ border: "none" }}
+      <div
+        className="blog-content"
+        dangerouslySetInnerHTML={{ __html: htmlContent }}
+        style={{ zIndex: 0, color: siteConfig.color_scheme.text_color }}
       />
     </div>
   );

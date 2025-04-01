@@ -20,6 +20,7 @@ function App({ siteConfig }) {
           style={{
             position: "relative",
             zIndex: 1,
+            backgroundColor: siteConfig.color_scheme.background_color,
           }}
         >
           <Router>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderBlock = ({ headerBlock, primaryColor }) => {
+const HeaderBlock = ({ headerBlock, primaryColor, colorScheme }) => {
   if (!headerBlock) return null;
 
   const {
@@ -25,13 +25,21 @@ const HeaderBlock = ({ headerBlock, primaryColor }) => {
       {image && <img src={image} alt="Header" className="img-fluid mb-4" />}
       <h1
         className={`${header_size === "medium" ? "display-4" : "display-3"}`}
-        style={{ color: header_color_override }}
+        style={{
+          color: header_color_override
+            ? header_color_override
+            : colorScheme.text_color,
+        }}
       >
         {header}
       </h1>
       <h2
-        className={`${subheading_size === "medium" ? "h4" : "h3"} text-muted`}
-        style={{ color: subheading_color_override }}
+        className={`${subheading_size === "medium" ? "h4" : "h3"}`}
+        style={{
+          color: subheading_color_override
+            ? subheading_color_override
+            : colorScheme.text_color,
+        }}
       >
         {subheading}
       </h2>

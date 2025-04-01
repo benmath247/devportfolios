@@ -14,10 +14,12 @@ function Home({ siteConfig }) {
           <HeaderBlock
             headerBlock={siteConfig.header_block}
             primaryColor={siteConfig.color_scheme.primary_color}
+            colorScheme={siteConfig.color_scheme}
           />
           <BlogSectionBlock
             blogSection={siteConfig.blog_section_block}
             primaryColor={siteConfig.color_scheme.primary_color}
+            colorScheme={siteConfig.color_scheme}
           />
           <ProjectsBlock
             projectsBlock={siteConfig.projects_block}
