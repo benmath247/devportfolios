@@ -44,7 +44,7 @@ const BlogPost = ({ siteConfig }) => {
       <div
         className="blog-content"
         dangerouslySetInnerHTML={{ __html: htmlContent }}
-        style={{ zIndex: 0, color: siteConfig.color_scheme.text_color }}
+        style={{ color: siteConfig.color_scheme.text_color }}
       />
     </div>
   );

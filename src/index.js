@@ -3,18 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import useSiteConfig from "./hooks/useSiteConfig";
+import { useSiteConfigContext } from "./contexts/siteConfigContext";
+
 // import siteConfigData from "./data/siteConfig.json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 const AppWrapper = () => {
-  const siteConfig = useSiteConfig();
-  // const siteConfig = siteConfigData;
-
-  console.log(siteConfig);
-
-  return <App siteConfig={siteConfig} />;
+  return <App context={useSiteConfigContext} />;
 };
 
 root.render(<AppWrapper />);

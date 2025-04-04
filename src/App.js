@@ -5,9 +5,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import Home from "./pages/Home";
 import BlogPost from "./pages/BlogPost";
-import Spinner from 'react-bootstrap/Spinner';
+import Spinner from "react-bootstrap/Spinner";
+import useSiteConfig from "./hooks/useSiteConfig";
 
-function App({ siteConfig }) {
+function App() {
+  // use siteConfigContext to get site configuration
+  const siteConfig = useSiteConfig();
   return (
     <div
       style={{
@@ -20,7 +23,6 @@ function App({ siteConfig }) {
         <div
           style={{
             position: "relative",
-            zIndex: 1,
             backgroundColor: siteConfig.color_scheme.background_color,
           }}
         >
@@ -39,11 +41,11 @@ function App({ siteConfig }) {
           </Router>
         </div>
       ) : (
-        <p className="text-center mt-5">
+        <div className="text-center mt-5">
           <Spinner animation="border" role="status">
             <span className="visually-hidden">Loading...</span>
           </Spinner>
-        </p>
+        </div>
       )}
     </div>
   );
