@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import Home from "./pages/Home";
 import BlogPost from "./pages/BlogPost";
+import Spinner from 'react-bootstrap/Spinner';
 
 function App({ siteConfig }) {
   return (
@@ -38,7 +39,11 @@ function App({ siteConfig }) {
           </Router>
         </div>
       ) : (
-        <p className="text-center mt-5">Loading site configuration...</p>
+        <p className="text-center mt-5">
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        </p>
       )}
     </div>
   );
