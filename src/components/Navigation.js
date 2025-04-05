@@ -1,4 +1,5 @@
 import React from "react";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
 const Navigation = ({ navigation, colorScheme }) => {
   if (!navigation) return null;
@@ -17,78 +18,58 @@ const Navigation = ({ navigation, colorScheme }) => {
   const secondaryColor = colorScheme.secondary_color;
   const primaryColor = colorScheme.primary_color;
 
-  const handleMouseOver = (e) => {
-    e.target.style.color = link_color_on_hover || secondaryColor;
+  const linkStyle = {
+    color: link_color_override || accentColor,
   };
 
-  const handleMouseOut = (e) => {
-    e.target.style.color = link_color_override || accentColor;
+  const hoverHandlers = {
+    onMouseOver: (e) => {
+      e.target.style.color = link_color_on_hover || secondaryColor;
+    },
+    onMouseOut: (e) => {
+      e.target.style.color = link_color_override || accentColor;
+    },
   };
 
   return (
-    <nav
-      className="navbar navbar-expand-lg"
-      style={{
-        backgroundColor: primaryColor,
-        padding: "1rem",
-      }}
+    <Navbar
+      expand="lg"
+      style={{ backgroundColor: primaryColor, padding: "1rem" }}
+      variant="dark"
     >
-      <div className="container-fluid">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          {navigation_items.map((item) => (
-            <li className="nav-item" key={item.id}>
-              <a
-                className="nav-link"
+      <Container fluid>
+        {/* <Navbar.Brand style={{ color: accentColor }}>Menu</Navbar.Brand> */}
+        <Navbar.Toggle aria-controls="main-navbar" />
+        <Navbar.Collapse id="main-navbar">
+          <Nav className="me-auto">
+            {navigation_items.map((item) => (
+              <Nav.Link
+                key={item.id}
                 href={item.link}
-                style={{ color: link_color_override || accentColor }}
-                onMouseOver={handleMouseOver}
-                onMouseOut={handleMouseOut}
+                style={linkStyle}
+                {...hoverHandlers}
               >
                 {item.text}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <div className="d-flex">
-          <a
-            href={github_link}
-            className="btn"
-            style={{ color: accentColor }}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            GitHub
-          </a>
-          <a
-            href={linkedin_link}
-            className="btn"
-            style={{ color: accentColor }}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            LinkedIn
-          </a>
-          <a
-            href={`mailto:${email_link}`}
-            className="btn"
-            style={{ color: accentColor }}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            Email
-          </a>
-          <a
-            href={resume_link}
-            className="btn"
-            style={{ color: accentColor }}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-          >
-            Resume
-          </a>
-        </div>
-      </div>
-    </nav>
+              </Nav.Link>
+            ))}
+          </Nav>
+          <Nav className="d-flex">
+            <Nav.Link href={github_link} style={linkStyle} {...hoverHandlers}>
+              GitHub
+            </Nav.Link>
+            <Nav.Link href={linkedin_link} style={linkStyle} {...hoverHandlers}>
+              LinkedIn
+            </Nav.Link>
+            <Nav.Link href={`mailto:${email_link}`} style={linkStyle} {...hoverHandlers}>
+              Email
+            </Nav.Link>
+            <Nav.Link href={resume_link} style={linkStyle} {...hoverHandlers}>
+              Resume
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
