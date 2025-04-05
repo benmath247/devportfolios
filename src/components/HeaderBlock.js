@@ -1,7 +1,9 @@
 import React from "react";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
 const HeaderBlock = ({ headerBlock, primaryColor, colorScheme }) => {
   if (!headerBlock) return null;
+  // TODO: get colorscheme and headerblock from context. the props here are weird
 
   const {
     background_color_override,
@@ -18,43 +20,50 @@ const HeaderBlock = ({ headerBlock, primaryColor, colorScheme }) => {
   } = headerBlock;
 
   return (
-    <div
-      className="text-center py-5"
-      style={{ backgroundColor: background_color_override }}
-    >
-      {image && <img src={image} alt="Header" className="img-fluid mb-4" />}
-      <h1
-        className={`${header_size === "medium" ? "display-4" : "display-3"}`}
-        style={{
-          color: header_color_override
-            ? header_color_override
-            : colorScheme.text_color,
-        }}
-      >
-        {header}
-      </h1>
-      <h2
-        className={`${subheading_size === "medium" ? "h4" : "h3"}`}
-        style={{
-          color: subheading_color_override
-            ? subheading_color_override
-            : colorScheme.text_color,
-        }}
-      >
-        {subheading}
-      </h2>
-      {button_text && button_link && (
-        <a
-          href={button_link}
-          className="btn mt-3"
-          style={{
-            backgroundColor: button_color_override || primaryColor,
-            color: "#fff",
-          }}
-        >
-          {button_text}
-        </a>
-      )}
+    <div style={{ backgroundColor: background_color_override || "transparent", padding: "3rem 0", textAlign: "center" }}>
+      <Container>
+        <Row className="justify-content-center">
+          <Col md={10}>
+            {image && (
+              <Image
+                src={image}
+                alt="Header"
+                fluid
+                className="mb-4"
+              />
+            )}
+            <h1
+              className={header_size === "medium" ? "display-4" : "display-3"}
+              style={{
+                color: header_color_override || colorScheme.text_color,
+              }}
+            >
+              {header}
+            </h1>
+            <h2
+              className={subheading_size === "medium" ? "h4" : "h3"}
+              style={{
+                color: subheading_color_override || colorScheme.text_color,
+              }}
+            >
+              {subheading}
+            </h2>
+            {button_text && button_link && (
+              <Button
+                href={button_link}
+                style={{
+                  backgroundColor: button_color_override || primaryColor,
+                  borderColor: button_color_override || primaryColor,
+                  color: "#fff",
+                  marginTop: "1rem",
+                }}
+              >
+                {button_text}
+              </Button>
+            )}
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
