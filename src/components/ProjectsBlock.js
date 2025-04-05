@@ -1,62 +1,63 @@
 import React from "react";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const ProjectsBlock = ({ projectsBlock, primaryColor, secondaryColor }) => {
   if (!projectsBlock) return null;
 
-  const { project_items, title, description, background_color_override } =
-    projectsBlock;
+  const { project_items, title, description, background_color_override } = projectsBlock;
 
   return (
     <section
-      className="py-5"
-      style={{ backgroundColor: background_color_override }}
+      style={{
+        backgroundColor: background_color_override || "transparent",
+        padding: "3rem 0",
+      }}
       id="projects"
     >
-      <div className="container">
+      <Container>
         <h2 className="mb-4">{title}</h2>
         <p className="mb-5">{description}</p>
-        <div className="row">
+        <Row>
           {project_items.map((project) => (
-            <div className="col-md-4 mb-4" key={project.id}>
-              <div className="card">
-                <img
-                  src={project.image}
-                  className="card-img-top"
-                  alt={project.title}
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text">{project.description}</p>
-                  <a
-                    href={project.link}
-                    className="btn me-2"
-                    style={{
-                      backgroundColor: primaryColor,
-                      color: "#fff",
-                    }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Visit Project
-                  </a>
-                  <a
-                    href={project.github_link}
-                    className="btn"
-                    style={{
-                      backgroundColor: secondaryColor,
-                      color: "#fff",
-                    }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
+            <Col md={4} className="mb-4" key={project.id}>
+              <Card>
+                <Card.Img variant="top" src={project.image} alt={project.title} />
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Text>{project.description}</Card.Text>
+                  <div className="d-flex flex-wrap gap-2">
+                    <Button
+                      // TODO: this should not use URLfield in the backend. it could very well be an internal link
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        backgroundColor: primaryColor,
+                        borderColor: primaryColor,
+                        color: "#fff",
+                      }}
+                    >
+                      Visit Project
+                    </Button>
+                    <Button
+                      href={project.github_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        backgroundColor: secondaryColor,
+                        borderColor: secondaryColor,
+                        color: "#fff",
+                      }}
+                    >
+                      GitHub
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
           ))}
-        </div>
-      </div>
+        </Row>
+      </Container>
     </section>
   );
 };
