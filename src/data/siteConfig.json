@@ -48,7 +48,7 @@
         "navigation": 5
       }
     ],
-    "style": "side_",
+    "style": "top_bar",
     "github_link": "https://www.github.com/jmath1",
     "linkedin_link": "http://linkedin.com/in/jonathanmath",
     "email_link": "yonimath81@gmail.com",
@@ -97,7 +97,7 @@
     "description": "Bad the reflect article station standard top. Wait growth certainly race card home pick. Yet price nice although.",
     "background_color_override": null,
     "background_style": "solid",
-    "blog_style": "grid",
+    "blog_style": "carousel",
     "blog_page_style": "modern"
   },
   "projects_block": {

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+// import the siteConfig.json file from ../data/siteConfig.json
+import siteConfigData from "../data/siteConfig.json";
 const useSiteConfig = () => {
   const [siteConfig, setSiteConfig] = useState(null);
 
@@ -8,6 +10,7 @@ const useSiteConfig = () => {
   const siteId = process.env.REACT_APP_PORTFOLIO_ID;
   const url = `${backendUrl}/portfolios/${siteId}`;
 
+  return siteConfigData;
   useEffect(() => {
     axios
       .get(url)

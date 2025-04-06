@@ -3,7 +3,6 @@ import HamburgerNav from "./HamburgerNav";
 import TopBarNav from "./TopBarNav";
 
 const Navigation = ({ navigation, colorScheme }) => {
-  console.log(navigation);
   if (!navigation) return null;
 
   const { link_color_override, link_color_on_hover } = navigation;

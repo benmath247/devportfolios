@@ -1,10 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import HeaderBlock from "../components/HeaderBlock";
-import BlogSectionBlock from "../components/BlogSectionBlock";
+import BlogSectionBlock from "../components/blog/BlogSectionBlock";
 import ProjectsBlock from "../components/ProjectsBlock";
 import React from "react";
 
 function Home({ siteConfig }) {
+  console.log(siteConfig);
   return (
     <div>
       {siteConfig ? (
@@ -20,6 +21,7 @@ function Home({ siteConfig }) {
             blogSection={siteConfig.blog_section_block}
             primaryColor={siteConfig.color_scheme.primary_color}
             colorScheme={siteConfig.color_scheme}
+            style={siteConfig.blog_section_block.blog_style}
           />
           <ProjectsBlock
             projectsBlock={siteConfig.projects_block}
