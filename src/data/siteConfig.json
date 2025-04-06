@@ -48,12 +48,12 @@
         "navigation": 5
       }
     ],
-    "style": "top_bar",
+    "style": "side_",
     "github_link": "https://www.github.com/jmath1",
     "linkedin_link": "http://linkedin.com/in/jonathanmath",
     "email_link": "yonimath81@gmail.com",
     "resume_link": "http://www.spencer.com/",
-    "icon_animation": "none",
+    "icon_animation": "spin",
     "link_color_override": null,
     "link_color_on_hover": null
   },

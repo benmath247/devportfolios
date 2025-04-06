@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/navigation/Navigation";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import Home from "./pages/Home";
