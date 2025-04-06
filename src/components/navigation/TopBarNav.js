@@ -4,7 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 
-const TopBarNav = ({ navigation, linkStyle, hoverHandlers, primaryColor }) => {
+const TopBarNav = ({
+  navigation,
+  linkStyle,
+  hoverHandlers,
+  primaryColor,
+  iconStyle,
+}) => {
   const {
     navigation_items,
     github_link,
@@ -12,13 +18,6 @@ const TopBarNav = ({ navigation, linkStyle, hoverHandlers, primaryColor }) => {
     email_link,
     resume_link,
   } = navigation;
-
-  // Consistent icon styling with HamburgerNav
-  const iconStyle = {
-    fontSize: "1.5rem",
-    width: "1.5em",
-    textAlign: "center",
-  };
 
   return (
     <Navbar

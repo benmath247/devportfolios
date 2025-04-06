@@ -23,11 +23,18 @@ const Navigation = ({ navigation, colorScheme }) => {
     },
   };
 
+  const iconStyle = {
+    fontSize: "1.5rem",
+    width: "1.5em",
+    textAlign: "center",
+  };
+
   const navProps = {
     navigation,
     linkStyle,
     hoverHandlers,
     primaryColor,
+    iconStyle,
   };
 
   switch (style) {

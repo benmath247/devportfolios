@@ -10,6 +10,7 @@ const HamburgerNav = ({
   linkStyle,
   hoverHandlers,
   primaryColor,
+  iconStyle,
 }) => {
   const {
     navigation_items,
@@ -19,13 +20,6 @@ const HamburgerNav = ({
     resume_link,
     icon_animation = "bounce",
   } = navigation;
-
-  // Enhanced icon styling
-  const iconStyle = {
-    fontSize: "1.5rem", // Larger icons
-    width: "1.5em", // Consistent width
-    textAlign: "center", // Perfect centering
-  };
 
   return (
     <Navbar
