@@ -12,7 +12,7 @@ const BlogSectionBlock = ({
   if (!blogSection) return null;
 
   const { background_color_override } = blogSection;
-  console.log(style);
+
   const sectionStyle = {
     backgroundColor: background_color_override || "transparent",
     color: colorScheme.text_color,
@@ -23,7 +23,6 @@ const BlogSectionBlock = ({
     blogSection,
     colorScheme,
   };
-  console.log(style);
 
   return (
     <section style={sectionStyle} id="blog">

@@ -7,10 +7,10 @@ import Home from "./pages/Home";
 import BlogList from "./pages/BlogList";
 import BlogDetail from "./pages/BlogDetail";
 import Spinner from "react-bootstrap/Spinner";
-import useSiteConfig from "./hooks/useSiteConfig";
+import { useSiteConfigContext } from "./contexts/siteConfigContext";
 
 function App() {
-  const siteConfig = useSiteConfig();
+  const siteConfig = useSiteConfigContext();
   return (
     <div
       style={{
@@ -32,7 +32,7 @@ function App() {
               colorScheme={siteConfig.color_scheme}
             />
             <Routes>
-              <Route path="/" element={<Home siteConfig={siteConfig} />} />
+              <Route path="/" element={<Home />} />
               <Route path="/blog/:slug" element={<BlogDetail />} />
               <Route path="/blog" element={<BlogList />} />
             </Routes>

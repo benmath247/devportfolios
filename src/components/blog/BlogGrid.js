@@ -1,16 +1,17 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Container, Row } from "react-bootstrap";
+import BlogPost from "./BlogPost";
 import "./Card.css";
+import { useSiteConfigContext } from "../../contexts/siteConfigContext";
 
-const BlogGrid = ({ blogSection, colorScheme }) => {
-  const { blog_posts, title, description } = blogSection;
-  const { accentColor } = colorScheme;
-  const navigate = useNavigate();
+const BlogGrid = () => {
+  const siteConfig = useSiteConfigContext();
+  console.log(siteConfig);
 
-  const handleCardClick = (slug) => {
-    navigate(`/blog/${slug}`);
-  };
+  const accentColor = siteConfig?.color_scheme?.accent_color;
+  const title = siteConfig?.blog_section_block?.blog_title;
+  const description = siteConfig?.blog_section_block?.blog_description;
+  const blog_posts = siteConfig?.blog_section_block?.blog_posts;
 
   return (
     <Container>
@@ -20,21 +21,7 @@ const BlogGrid = ({ blogSection, colorScheme }) => {
       <p className="mb-5">{description}</p>
       <Row xs={1} md={2} lg={3} className="g-4">
         {blog_posts.map((post) => (
-          <Col key={post.id}>
-            <Card eonClick={() => handleCardClick(post.slug)}>
-              <Card.Img
-                variant="top"
-                src={post.image}
-                alt={post.title}
-                className="blog-card-img"
-              />
-              <Card.Body className="d-flex flex-column">
-                <Card.Title>{post.title}</Card.Title>
-                <Card.Text>{post.subtitle}</Card.Text>
-                <div className="mt-auto text-primary fw-bold"></div>
-              </Card.Body>
-            </Card>
-          </Col>
+          <BlogPost post={post}></BlogPost>
         ))}
       </Row>
     </Container>

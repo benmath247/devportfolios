@@ -1,10 +1,9 @@
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Row } from "react-bootstrap";
 import { useSiteConfigContext } from "../contexts/siteConfigContext";
+import BlogPost from "../components/blog/BlogPost";
 
 const BlogList = () => {
   const siteConfig = useSiteConfigContext();
-
   if (!siteConfig) {
     return <p className="text-center mt-5">Loading site configuration...</p>;
   }
@@ -14,7 +13,7 @@ const BlogList = () => {
   if (!posts || posts.length === 0) {
     return <p className="text-center mt-5">No blog posts to display.</p>;
   }
-
+  console.log(posts);
   return (
     <Container className="py-5">
       <h1
@@ -25,25 +24,7 @@ const BlogList = () => {
       </h1>
       <Row>
         {posts.map((post) => (
-          <Col md={4} className="mb-4" key={post.id}>
-            <Card>
-              <Card.Img variant="top" src={post.image} alt={post.title} />
-              <Card.Body>
-                <Card.Title>{post.title}</Card.Title>
-                <Card.Text>{post.subtitle}</Card.Text>
-                <Button
-                  as={Link}
-                  to={`/blog/${post.slug}`}
-                  style={{
-                    backgroundColor: siteConfig.color_scheme.primary_color,
-                    borderColor: siteConfig.color_scheme.primary_color,
-                  }}
-                >
-                  Read More
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
+          <BlogPost post={post} key={post.id} />
         ))}
       </Row>
     </Container>

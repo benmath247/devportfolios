@@ -3,8 +3,9 @@ import HeaderBlock from "../components/HeaderBlock";
 import BlogSectionBlock from "../components/blog/BlogSectionBlock";
 import ProjectsBlock from "../components/ProjectsBlock";
 import React from "react";
-
-function Home({ siteConfig }) {
+import { useSiteConfigContext } from "../contexts/siteConfigContext";
+function Home() {
+  const siteConfig = useSiteConfigContext();
   console.log(siteConfig);
   return (
     <div>
