@@ -5,8 +5,7 @@ import "./BlogCarousel.css";
 
 const BlogCarousel = ({ blogSection, colorScheme }) => {
   const { blog_posts, title, description } = blogSection;
-  const { primary_color, secondary_color, accent_color, background_color } =
-    colorScheme;
+  const { primary_color, secondary_color, accent_color } = colorScheme;
   console.log(colorScheme);
   const [activeIndex, setActiveIndex] = useState(0);
 
