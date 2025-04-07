@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import Home from "./pages/Home";
 import BlogList from "./pages/BlogList";
-import BlogPost from "./pages/BlogPost";
+import BlogDetail from "./pages/BlogDetail";
 import Spinner from "react-bootstrap/Spinner";
 import useSiteConfig from "./hooks/useSiteConfig";
 
@@ -33,10 +33,7 @@ function App() {
             />
             <Routes>
               <Route path="/" element={<Home siteConfig={siteConfig} />} />
-              <Route
-                path="/blog/:slug"
-                element={<BlogPost siteConfig={siteConfig} />}
-              />
+              <Route path="/blog/:slug" element={<BlogDetail />} />
               <Route path="/blog" element={<BlogList />} />
             </Routes>
           </Router>

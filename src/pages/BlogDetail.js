@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useSiteConfigContext } from "../contexts/siteConfigContext";
 
-const BlogPost = ({ siteConfig }) => {
+const BlogPost = () => {
+  const siteConfig = useSiteConfigContext();
   const { slug } = useParams();
   const [htmlContent, setHtmlContent] = useState(null);
 
