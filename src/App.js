@@ -4,12 +4,12 @@ import Navigation from "./components/navigation/Navigation";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import Home from "./pages/Home";
+import BlogList from "./pages/BlogList";
 import BlogPost from "./pages/BlogPost";
 import Spinner from "react-bootstrap/Spinner";
 import useSiteConfig from "./hooks/useSiteConfig";
 
 function App() {
-  // use siteConfigContext to get site configuration
   const siteConfig = useSiteConfig();
   return (
     <div
@@ -37,6 +37,7 @@ function App() {
                 path="/blog/:slug"
                 element={<BlogPost siteConfig={siteConfig} />}
               />
+              <Route path="/blog" element={<BlogList />} />
             </Routes>
           </Router>
         </div>
