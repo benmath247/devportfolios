@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import BlogDetail from "./pages/BlogDetail";
 import BlogList from "./pages/BlogList";
 import ProjectList from "./pages/ProjectList";
+import ProjectDetail from "./pages/ProjectDetail";
 import { useSiteConfigContext } from "./contexts/siteConfigContext";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
 
               <Route path="/projects" element={<ProjectList />} />
               <Route path="/blog/:slug" element={<BlogDetail />} />
+              <Route path="/projects/:slug" element={<ProjectDetail />} />
             </Routes>
           </Router>
         </div>
