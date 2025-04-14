@@ -5,19 +5,23 @@ import "./Card.css";
 import { useSiteConfigContext } from "../../contexts/siteConfigContext";
 
 const BlogGrid = () => {
-  const siteConfig = useSiteConfigContext();
+  const { siteConfig } = useSiteConfigContext();
   console.log(siteConfig);
 
-  const accentColor = siteConfig?.color_scheme?.accent_color;
-  const title = siteConfig?.blog_section_block?.blog_title;
+  const textColor = siteConfig?.color_scheme?.text_color;
+  const title = siteConfig?.blog_section_block?.title;
   const description = siteConfig?.blog_section_block?.blog_description;
   const blog_posts = siteConfig?.blog_section_block?.blog_posts;
+  const name = siteConfig?.blog_section_block?.name;
 
   return (
     <Container>
-      <h2 className="mb-4" style={{ color: accentColor }}>
-        {title}
+      <h2 className="mb-4" style={{ color: textColor }}>
+        {name}
       </h2>
+      <h4 className="mb-4" style={{ color: textColor }}>
+        {title}
+      </h4>
       <p className="mb-5">{description}</p>
       <Row xs={1} md={2} lg={3} className="g-4">
         {blog_posts.map((post) => (

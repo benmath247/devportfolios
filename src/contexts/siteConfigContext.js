@@ -6,7 +6,7 @@ const SiteConfigProvider = ({ children }) => {
   const siteConfig = useSiteConfig();
 
   return (
-    <SiteConfigContext.Provider value={siteConfig}>
+    <SiteConfigContext.Provider value={{ siteConfig }}>
       {children}
     </SiteConfigContext.Provider>
   );
@@ -22,4 +22,4 @@ const useSiteConfigContext = () => {
   return context;
 };
 
-export { SiteConfigProvider, useSiteConfigContext };
+export { SiteConfigProvider, SiteConfigContext, useSiteConfigContext };

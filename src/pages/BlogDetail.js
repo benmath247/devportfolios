@@ -3,11 +3,11 @@ import { useParams } from "react-router-dom";
 import { useSiteConfigContext } from "../contexts/siteConfigContext";
 
 const BlogPost = () => {
-  const siteConfig = useSiteConfigContext();
+  const { siteConfig } = useSiteConfigContext();
   const { slug } = useParams();
   const [htmlContent, setHtmlContent] = useState(null);
 
-  const post = siteConfig.blog_section_block.blog_posts.find(
+  const post = siteConfig?.blog_section_block?.blog_posts.find(
     (p) => p.slug === slug
   );
 

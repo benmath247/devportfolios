@@ -1,12 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import HeaderBlock from "../components/HeaderBlock";
 import BlogSectionBlock from "../components/blog/BlogSectionBlock";
 import ProjectsBlock from "../components/ProjectsBlock";
 import React from "react";
 import { useSiteConfigContext } from "../contexts/siteConfigContext";
 function Home() {
-  const siteConfig = useSiteConfigContext();
-  console.log(siteConfig);
+  const { siteConfig } = useSiteConfigContext();
   return (
     <div>
       {siteConfig ? (

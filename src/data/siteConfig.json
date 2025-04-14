@@ -1,149 +1,149 @@
 {
-  "id": 6,
+  "id": 1,
   "color_scheme": {
-    "id": 6,
-    "name": "Forest Calm",
-    "primary_color": "#2E8B57",
-    "secondary_color": "#A9BA9D",
-    "background_color": "#E8F0E5",
-    "accent_color": "#556B2F",
-    "text_color": "#1C1C1C"
+    "id": 1,
+    "name": "Professional Breeze",
+    "primary_color": "#003344",
+    "secondary_color": "#B2D2DE",
+    "background_color": "#FDFFFF",
+    "accent_color": "#C0D0FF",
+    "text_color": "#003344"
   },
   "header_block": {
-    "id": 14,
+    "id": 1,
+    "image": null,
     "order": 0,
-    "name": "like",
+    "name": "Welcome to Jonathan Math's Portfolio",
     "style": "minimal",
     "background_color_override": null,
-    "image": "http://0.0.0.0/media/header_images/header.jpg",
-    "header": "Sell human bank participant.",
+    "header": "Welcome to Jonathan Math's Portfolio",
     "header_color_override": null,
     "header_size": "medium",
-    "subheading": "House pull real eight arm than.",
+    "subheading": "Take a look around",
     "subheading_color_override": null,
     "subheading_size": "medium",
-    "button_text": "test",
-    "button_link": "https://www.hurst-mccormick.biz/",
+    "button_text": "Contact Me",
+    "button_link": "http://www.example.com",
     "button_color_override": null
   },
   "navigation": {
-    "id": 5,
+    "id": 1,
     "navigation_items": [
       {
-        "id": 13,
+        "id": 1,
         "text": "Home",
-        "link": "/",
-        "navigation": 5
+        "link": "http://localhost:3000",
+        "navigation": 1
       },
       {
-        "id": 14,
+        "id": 2,
         "text": "Blog",
-        "link": "/#blog",
-        "navigation": 5
+        "link": "http://localhost:3000/blog",
+        "navigation": 1
       },
       {
-        "id": 15,
+        "id": 3,
         "text": "Projects",
-        "link": "/#projects",
-        "navigation": 5
+        "link": "http://localhost:3000/projects",
+        "navigation": 1
       }
     ],
-    "style": "top_bar",
-    "github_link": "https://www.github.com/jmath1",
+    "style": "hamburger",
+    "github_link": "https://github.com/jmath1",
     "linkedin_link": "http://linkedin.com/in/jonathanmath",
     "email_link": "yonimath81@gmail.com",
-    "resume_link": "http://www.spencer.com/",
-    "icon_animation": "spin",
+    "resume_link": "https://drive.google.com/file/d/1wEhsLBOCr3AY4idhYxMrsJnUK850epIo/view?usp=sharing",
+    "icon_animation": "bounce",
     "link_color_override": null,
     "link_color_on_hover": null
   },
   "blog_section_block": {
-    "id": 15,
+    "id": 2,
     "blog_posts": [
       {
-        "id": 13,
-        "title": "Former game human all financial.",
-        "subtitle": "Example structure hope civil discussion live production.",
-        "date_created": "2025-03-28T22:55:04.785274Z",
-        "image": "http://0.0.0.0/media/blog_images/blogpost.jpg",
-        "html_file": "http://0.0.0.0/media/blog_files/example_C6Td4TV.dat",
-        "slug": "former-game-human-all-financial",
-        "blog_section": 15
+        "id": 1,
+        "image": "https://portfolio-django-static-storage.s3.amazonaws.com/media/blog_images/blogpost.jpg?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=ox%2BP45RlWyBZgprbH8ToU%2FSt6GY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "html_file": "https://portfolio-django-static-storage.s3.amazonaws.com/media/blog_files/example.dat?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=Z2FEoL0g%2FJkKAh%2FFZirsv8akDwQ%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "title": "Organization everything.",
+        "subtitle": "Small conference since.",
+        "date_created": "2025-04-07T13:01:24.209590Z",
+        "slug": "organization-everything",
+        "blog_section": 2
       },
       {
-        "id": 14,
-        "title": "And population put difference election.",
-        "subtitle": "Home everyone remember real beyond threat.",
-        "date_created": "2025-03-28T22:55:05.466747Z",
-        "image": "http://0.0.0.0/media/blog_images/blogpost_kqAlrmW.jpg",
-        "html_file": "http://0.0.0.0/media/blog_files/example_cqs3nXv.dat",
-        "slug": "and-population-put-difference-election",
-        "blog_section": 15
+        "id": 2,
+        "image": "https://portfolio-django-static-storage.s3.amazonaws.com/media/blog_images/blogpost.jpg?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=ox%2BP45RlWyBZgprbH8ToU%2FSt6GY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "html_file": "https://portfolio-django-static-storage.s3.amazonaws.com/media/blog_files/example.dat?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=Z2FEoL0g%2FJkKAh%2FFZirsv8akDwQ%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "title": "Once key establish.",
+        "subtitle": "Their law environmental third money probably above especially.",
+        "date_created": "2025-04-07T13:01:24.689532Z",
+        "slug": "once-key-establish",
+        "blog_section": 2
       },
       {
-        "id": 15,
-        "title": "Camera clearly fill card east.",
-        "subtitle": "Allow own soon professional focus old.",
-        "date_created": "2025-03-28T22:55:06.844311Z",
-        "image": "http://0.0.0.0/media/blog_images/blogpost_ToabV5B.jpg",
-        "html_file": "http://0.0.0.0/media/blog_files/example_dvdiJ7x.dat",
-        "slug": "camera-clearly-fill-card-east",
-        "blog_section": 15
+        "id": 3,
+        "image": "https://portfolio-django-static-storage.s3.amazonaws.com/media/blog_images/blogpost.jpg?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=ox%2BP45RlWyBZgprbH8ToU%2FSt6GY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "html_file": "https://portfolio-django-static-storage.s3.amazonaws.com/media/blog_files/example.dat?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=Z2FEoL0g%2FJkKAh%2FFZirsv8akDwQ%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "title": "Energy pressure.",
+        "subtitle": "Work plant measure.",
+        "date_created": "2025-04-07T13:01:25.187541Z",
+        "slug": "energy-pressure",
+        "blog_section": 2
       }
     ],
     "order": 1,
-    "name": "space",
-    "title": "Blog",
-    "description": "Bad the reflect article station standard top. Wait growth certainly race card home pick. Yet price nice although.",
+    "name": "Blog",
+    "title": "Backend, Frontend, DevOps, and Tech",
+    "description": "Every week I publish what I am up to, what I'm learning about, and what I want to share.",
     "background_color_override": null,
     "background_style": "solid",
-    "blog_style": "carousel",
+    "blog_style": "grid",
     "blog_page_style": "modern"
   },
   "projects_block": {
-    "id": 16,
+    "id": 3,
     "project_items": [
       {
-        "id": 13,
-        "title": "Recent make.",
-        "description": "Free song around front. Face product center fire animal consider marriage. Exactly participant growth realize song.",
-        "image": "http://0.0.0.0/media/project_images/projectitem.jpg",
-        "link": "https://www.schwartz.biz/",
-        "github_link": "http://burns.com/",
-        "date_created": "2025-03-28T22:55:07.261954Z",
-        "projects_block": 16
+        "id": 1,
+        "image": "https://portfolio-django-static-storage.s3.amazonaws.com/media/project_images/projectitem.jpg?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=256DiyyTUPHps79p1%2FBVE2ePOPA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "title": "Summer give their.",
+        "description": "Wall camera scene beat rather. Run standard station. Deal very if should.",
+        "link": "http://alvarez.biz/",
+        "github_link": "https://wilson.net/",
+        "date_created": "2025-04-07T13:01:25.680978Z",
+        "projects_block": 3
       },
       {
-        "id": 14,
-        "title": "Money early reality.",
-        "description": "Finally always seven the rule child media activity.",
-        "image": "http://0.0.0.0/media/project_images/projectitem_70wMWgM.jpg",
-        "link": "https://carpenter.com/",
-        "github_link": "http://www.terrell.com/",
-        "date_created": "2025-03-28T22:55:07.954141Z",
-        "projects_block": 16
+        "id": 2,
+        "image": "https://portfolio-django-static-storage.s3.amazonaws.com/media/project_images/projectitem.jpg?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=256DiyyTUPHps79p1%2FBVE2ePOPA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "title": "Central top.",
+        "description": "Social enough section energy lead eye price magazine. Seem among though drive sure green.",
+        "link": "https://garcia-johnson.com/",
+        "github_link": "https://lloyd.biz/",
+        "date_created": "2025-04-07T13:01:26.134564Z",
+        "projects_block": 3
       },
       {
-        "id": 15,
-        "title": "Thousand direction ten.",
-        "description": "Trouble far approach last. Fight turn whose next economic.",
-        "image": "http://0.0.0.0/media/project_images/projectitem_1Qxz2I0.jpg",
-        "link": "http://www.stone.net/",
-        "github_link": "http://github.com/jmath1",
-        "date_created": "2025-03-28T22:55:08.644152Z",
-        "projects_block": 16
+        "id": 3,
+        "image": "https://portfolio-django-static-storage.s3.amazonaws.com/media/project_images/projectitem.jpg?AWSAccessKeyId=ASIAW3SKCYCFR5FAVO22&Signature=256DiyyTUPHps79p1%2FBVE2ePOPA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICXno74zrlhtFgMdf0zQW5JVt%2Bu%2BTYuxl76tMmRdIR4eAiB2ujACpc%2F44kMYOH9DhgqLlW21Dprlxwa4C7wqN3s17yq9BQgYEAEaDDQ3MTUyODAzMDM0NyIMSTxJmKZSqLjVmxJ5KpoFLI%2FgMq7%2FZUX22E39VaRDzso5YK9EvSIKfzvScD7jtEtjR%2Bz9MJWSMO06BcWfHt9f20R%2BcM%2BDKCguBuTEAffihnfdMWdvcS379SVLZ9gu16Q1%2B%2FQk89kuhWK5sc2e3Lq6aw9Bzpgr16wXfQ5zER1vx1l6LrK2HxKANRa7bdkyTPJRUtE9idgaFF8FAjfACknIOWKm5yVX1gyfHUI6o5w%2Fi0JaADBzbX5JMqroDthCJiBozkg5Mmp2Rebyupo1VS6a5ug%2F224%2FWLu9hcB9oKuNpgWtOYWuZTkatdZ3x1IgZgVhXUi9dj9OaKDHs62s1TgjcQ7S1kVAm%2B%2BIwYkcHaEOcqMYeXdib04Z%2FDQY8FYRRolgUpUgB2RijjTmejR7g8z0kK0oAyaVumFva%2B3TcEYwwaE%2B4nGs6xTE4nGD42Gjzum6O%2FkjEcEG7gOZO2fU08xkLUnr%2FDwXtKtUw2Uu78mDs0xRwkL7IWetd%2F4pBdN9O0k%2FAaetuPiSoZf5YR3BoWdZ7cJwx8yc3eIGI84I2YY7btU6wmLZYdZ580lsaj5bNVN83YzC4XawtwweVl%2BM0yGrZ6Bwic2B0qFkBVB8RW54coZ1rQPSHfwHpfk99izd3Ff7T3fkjJH7q8A2M4rzaSZHa16yvWiq6djBxqZLbN3Wry%2FWYZku3JGd%2FpwxOMCM2XQZO6QAjug7zKDCdSKU3ZbiBncqFVmCyANwbzxjIMqdH7FhqAYsUJgvDE2YEilnZSHqziagZ2q9Nqer7t9Dch9ELrNmUQoaqQqGPM7pu0eP%2FMgRUWm6zzgVAx8KuXM8cdovjySN5lvnU5CTcpC6F4KF%2BUndcQKonMi8sWkQ4o0jTizq%2BNpPiriW0RiDF7PigkBkPkyzDwerFtCPMIi39L8GOrIB5%2BHwzJ%2FvfNBs3ttCNjAmz16REXYBRzTkknyjy%2Bzm6MoD7Z7nBa2WEMghvCH6rlwAqzk9ZIZ4Pf4w9K7XuxAIPmqjowumsyYeRdYFzXcT7YGMm6FQzzy9YhJZy3p3JRZq%2B88im47lPb39g%2Fl2uWJDrsWiGrO398bUX8sbo19Q1r7qwV%2Fuq49FDH8EKMeh%2FflKdSMECtkEcb5ygmU0f30dxMUFPZiVYQ9MlvbfvHKJDHhUFQ%3D%3D&Expires=1744654469",
+        "title": "Our stay paper.",
+        "description": "Floor message decision election on. Recognize senior thing almost. Play tax quickly leave after.",
+        "link": "https://gibson-hill.com/",
+        "github_link": "http://www.klein-johnson.com/",
+        "date_created": "2025-04-07T13:01:26.570726Z",
+        "projects_block": 3
       }
     ],
     "order": 2,
-    "name": "start",
-    "title": "Projects",
-    "description": "Thank discussion call old.",
+    "name": "across",
+    "title": "Will check throughout.",
+    "description": "Pass pressure institution ask star analysis. Large once pick magazine approach common crime start.",
     "background_color_override": null,
     "background_style": "solid",
     "project_style": "grid"
   },
-  "name": "Forest Calm Portfolio",
-  "created_at": "2025-03-28T22:55:04.139917Z",
-  "updated_at": "2025-03-28T22:55:04.139964Z",
-  "owner": 4
+  "name": "Ocean Breeze Portfolio",
+  "created_at": "2025-04-07T13:01:23.811720Z",
+  "updated_at": "2025-04-14T16:28:47.595162Z",
+  "owner": 1
 }
