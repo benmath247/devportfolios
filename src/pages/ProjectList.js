@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import { useSiteConfigContext } from "../contexts/siteConfigContext";
-import BlogPost from "../components/blog/BlogPost";
+import ProjectCard from "../components/project/ProjectCard";
 
 const ProjectList = () => {
   const { siteConfig } = useSiteConfigContext();
@@ -23,7 +23,7 @@ const ProjectList = () => {
       </h1>
       <Row>
         {projects.map((project) => (
-          <BlogPost post={project} key={project.id} />
+          <ProjectCard post={project} key={project.id} />
         ))}
       </Row>
     </Container>
