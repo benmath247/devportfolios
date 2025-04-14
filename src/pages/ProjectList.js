@@ -23,7 +23,7 @@ const ProjectList = () => {
       </h1>
       <Row>
         {projects.map((project) => (
-          <ProjectCard post={project} key={project.id} />
+          <ProjectCard project={project} key={project.id} />
         ))}
       </Row>
     </Container>
