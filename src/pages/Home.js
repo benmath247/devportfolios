@@ -3,6 +3,8 @@ import BlogSectionBlock from "../components/blog/BlogSectionBlock";
 import ProjectsBlock from "../components/ProjectsBlock";
 import React from "react";
 import { useSiteConfigContext } from "../contexts/siteConfigContext";
+import Spinner from "../components/Spinner";
+
 function Home() {
   const { siteConfig } = useSiteConfigContext();
   return (
@@ -29,7 +31,7 @@ function Home() {
           />
         </div>
       ) : (
-        <p className="text-center mt-5">Loading site configuration...</p>
+        <Spinner />
       )}
     </div>
   );
