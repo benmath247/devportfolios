@@ -46,6 +46,7 @@ const TopBarNav = ({
             href={github_link}
             style={linkStyle}
             {...hoverHandlers}
+            target="_blank"
             className="social-icon-link"
           >
             <FontAwesomeIcon icon={faGithub} style={iconStyle} />
@@ -53,6 +54,7 @@ const TopBarNav = ({
           <Nav.Link
             href={linkedin_link}
             style={linkStyle}
+            target="_blank"
             {...hoverHandlers}
             className="social-icon-link"
           >
@@ -61,6 +63,7 @@ const TopBarNav = ({
           <Nav.Link
             href={`mailto:${email_link}`}
             style={linkStyle}
+            target="_blank"
             {...hoverHandlers}
             className="social-icon-link"
           >
@@ -68,6 +71,7 @@ const TopBarNav = ({
           </Nav.Link>
           <Nav.Link
             href={resume_link}
+            target="_blank"
             style={linkStyle}
             {...hoverHandlers}
             className="social-icon-link"
