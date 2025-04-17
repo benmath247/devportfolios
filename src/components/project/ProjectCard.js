@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   const handleCardClick = (slug) => {
-    navigate(`/project/${slug}`);
+    navigate(`/projects/${slug}`);
   };
   const navigate = useNavigate();
   return (
