@@ -34,7 +34,16 @@ function App() {
           </Router>
         </div>
       ) : (
-        <Spinner animation="border" />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
+        >
+          <Spinner animation="border" />
+        </div>
       )}
     </div>
   );

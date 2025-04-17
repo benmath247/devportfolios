@@ -6,7 +6,18 @@ import { Spinner } from "react-bootstrap";
 const BlogList = () => {
   const { siteConfig } = useSiteConfigContext();
   if (!siteConfig) {
-    return <Spinner animation="border" />;
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <Spinner animation="border" />
+      </div>
+    );
   }
 
   const posts = siteConfig.blog_section_block.blog_posts;

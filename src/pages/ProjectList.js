@@ -7,7 +7,18 @@ import ProjectCarousel from "../components/project/ProjectCarousel";
 const ProjectList = () => {
   const { siteConfig } = useSiteConfigContext();
   if (!siteConfig) {
-    return <Spinner animation="border" />;
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <Spinner animation="border" />
+      </div>
+    );
   }
 
   const projects = siteConfig.projects_block.project_items;
