@@ -3,7 +3,7 @@ import BlogSectionBlock from "../components/blog/BlogSectionBlock";
 import ProjectsBlock from "../components/ProjectsBlock";
 import React from "react";
 import { useSiteConfigContext } from "../contexts/siteConfigContext";
-import Spinner from "../components/Spinner";
+import { Spinner } from "react-bootstrap";
 
 function Home() {
   const { siteConfig } = useSiteConfigContext();
@@ -31,7 +31,7 @@ function Home() {
           />
         </div>
       ) : (
-        <Spinner />
+        <Spinner animation="border" />
       )}
     </div>
   );
