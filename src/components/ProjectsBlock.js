@@ -1,27 +1,40 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import ProjectCarousel from "./project/ProjectCarousel";
 
 const ProjectsBlock = ({ projectsBlock, primaryColor, secondaryColor }) => {
   if (!projectsBlock) return null;
 
-  const { project_items, title, description, background_color_override } = projectsBlock;
+  const {
+    project_items,
+    project_style,
+    title,
+    description,
+    background_color_override,
+  } = projectsBlock;
 
-  return (
-    <section
-      style={{
-        backgroundColor: background_color_override || "transparent",
-        padding: "3rem 0",
-      }}
-      id="projects"
-    >
-      <Container>
-        <h2 className="mb-4">{title}</h2>
-        <p className="mb-5">{description}</p>
+  const renderProjectsBlock = (project_items) => {
+    if (project_style === "carousel") {
+      return (
+        <ProjectCarousel
+          projectsSection={projectsBlock}
+          colorScheme={{
+            primary_color: primaryColor,
+            secondary_color: secondaryColor,
+          }}
+        />
+      );
+    } else {
+      return (
         <Row>
           {project_items.map((project) => (
             <Col md={4} className="mb-4" key={project.id}>
               <Card>
-                <Card.Img variant="top" src={project.image} alt={project.title} />
+                <Card.Img
+                  variant="top"
+                  src={project.image}
+                  alt={project.title}
+                />
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
@@ -57,6 +70,21 @@ const ProjectsBlock = ({ projectsBlock, primaryColor, secondaryColor }) => {
             </Col>
           ))}
         </Row>
+      );
+    }
+  };
+  return (
+    <section
+      style={{
+        backgroundColor: background_color_override || "transparent",
+        padding: "3rem 0",
+      }}
+      id="projects"
+    >
+      <Container>
+        <h2 className="mb-4">{title}</h2>
+        <p className="mb-5">{description}</p>
+        {renderProjectsBlock(project_items)}
       </Container>
     </section>
   );

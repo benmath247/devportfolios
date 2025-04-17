@@ -1,0 +1,22 @@
+.blog-carousel .carousel-control-prev,
+.blog-carousel .carousel-control-next {
+  width: auto;
+  opacity: 1;
+}
+
+.blog-carousel .carousel-control-prev {
+  left: -20px;
+}
+
+.blog-carousel .carousel-control-next {
+  right: -20px;
+}
+
+@media (max-width: 768px) {
+  .blog-carousel .carousel-control-prev {
+    left: -30px;
+  }
+  .blog-carousel .carousel-control-next {
+    right: -30px;
+  }
+}

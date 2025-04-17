@@ -111,7 +111,8 @@
         "link": "http://alvarez.biz/",
         "github_link": "https://wilson.net/",
         "date_created": "2025-04-07T13:01:25.680978Z",
-        "projects_block": 3
+        "projects_block": 3,
+        "slug": "summer-give-their"
       },
       {
         "id": 2,
@@ -121,7 +122,8 @@
         "link": "https://garcia-johnson.com/",
         "github_link": "https://lloyd.biz/",
         "date_created": "2025-04-07T13:01:26.134564Z",
-        "projects_block": 3
+        "projects_block": 3,
+        "slug": "central-top"
       },
       {
         "id": 3,
@@ -131,7 +133,8 @@
         "link": "https://gibson-hill.com/",
         "github_link": "http://www.klein-johnson.com/",
         "date_created": "2025-04-07T13:01:26.570726Z",
-        "projects_block": 3
+        "projects_block": 3,
+        "slug": "our-stay-paper"
       }
     ],
     "order": 2,
@@ -140,7 +143,7 @@
     "description": "Pass pressure institution ask star analysis. Large once pick magazine approach common crime start.",
     "background_color_override": null,
     "background_style": "solid",
-    "project_style": "grid"
+    "project_style": "carousel"
   },
   "name": "Ocean Breeze Portfolio",
   "created_at": "2025-04-07T13:01:23.811720Z",
