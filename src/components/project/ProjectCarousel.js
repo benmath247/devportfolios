@@ -84,7 +84,7 @@ const ProjectCarousel = ({ projectsSection, colorScheme }) => {
                     <Card.Body className="h-100 d-flex flex-column p-4">
                       <Card.Title className="h3">{project.title}</Card.Title>
                       <Card.Text className="flex-grow-1">
-                        {project.subtitle}
+                        {project.blurb}
                       </Card.Text>
                       <Button
                         href={project.link}

@@ -10,7 +10,7 @@ const useSiteConfig = () => {
   const siteId = process.env.REACT_APP_PORTFOLIO_ID;
   const url = `${backendUrl}/portfolios/${siteId}`;
 
-  //return siteConfigData;
+  // return siteConfigData;
 
   useEffect(() => {
     axios

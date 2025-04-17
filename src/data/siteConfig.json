@@ -112,7 +112,8 @@
         "github_link": "https://wilson.net/",
         "date_created": "2025-04-07T13:01:25.680978Z",
         "projects_block": 3,
-        "slug": "summer-give-their"
+        "slug": "summer-give-their",
+        "blurb": "if you dont make it happen someone else will"
       },
       {
         "id": 2,
@@ -123,7 +124,8 @@
         "github_link": "https://lloyd.biz/",
         "date_created": "2025-04-07T13:01:26.134564Z",
         "projects_block": 3,
-        "slug": "central-top"
+        "slug": "central-top",
+        "blurb": "if you will it, it is no dream"
       },
       {
         "id": 3,
@@ -134,7 +136,8 @@
         "github_link": "http://www.klein-johnson.com/",
         "date_created": "2025-04-07T13:01:26.570726Z",
         "projects_block": 3,
-        "slug": "our-stay-paper"
+        "slug": "our-stay-paper",
+        "blurb": "we can get this done. believe. I want to put some more text here to test longer strings."
       }
     ],
     "order": 2,
