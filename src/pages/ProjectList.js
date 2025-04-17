@@ -1,11 +1,12 @@
 import { Container, Row } from "react-bootstrap";
 import { useSiteConfigContext } from "../contexts/siteConfigContext";
 import ProjectCard from "../components/project/ProjectCard";
+import { Spinner } from "react-bootstrap";
 
 const ProjectList = () => {
   const { siteConfig } = useSiteConfigContext();
   if (!siteConfig) {
-    return <p className="text-center mt-5">Loading site configuration...</p>;
+    return <Spinner animation="border" />;
   }
 
   const projects = siteConfig.projects_block.project_items;

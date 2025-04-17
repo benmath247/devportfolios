@@ -9,6 +9,8 @@ import ProjectList from "./pages/ProjectList";
 import ProjectDetail from "./pages/ProjectDetail";
 import { useSiteConfigContext } from "./contexts/siteConfigContext";
 
+import { Spinner } from "react-bootstrap";
+
 function App() {
   const { siteConfig } = useSiteConfigContext();
 
@@ -32,7 +34,7 @@ function App() {
           </Router>
         </div>
       ) : (
-        <p className="text-center mt-5">Loading site configuration...</p>
+        <Spinner animation="border" />
       )}
     </div>
   );

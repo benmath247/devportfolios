@@ -1,11 +1,12 @@
 import { Container, Row } from "react-bootstrap";
 import { useSiteConfigContext } from "../contexts/siteConfigContext";
 import BlogPost from "../components/blog/BlogPost";
+import { Spinner } from "react-bootstrap";
 
 const BlogList = () => {
   const { siteConfig } = useSiteConfigContext();
   if (!siteConfig) {
-    return <p className="text-center mt-5">Loading site configuration...</p>;
+    return <Spinner animation="border" />;
   }
 
   const posts = siteConfig.blog_section_block.blog_posts;
