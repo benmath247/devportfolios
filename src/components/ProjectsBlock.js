@@ -82,8 +82,8 @@ const ProjectsBlock = ({ projectsBlock, primaryColor, secondaryColor }) => {
       id="projects"
     >
       <Container>
-        <h2 className="mb-4">{title}</h2>
-        <p className="mb-5">{description}</p>
+        <h2 className="mb-4 text-center">{title}</h2>
+        <p className="mb-5 text-center">{description}</p>
         {renderProjectsBlock(project_items)}
       </Container>
     </section>

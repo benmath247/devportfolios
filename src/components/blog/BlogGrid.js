@@ -16,12 +16,13 @@ const BlogGrid = () => {
 
   return (
     <Container>
-      <h2 className="mb-4" style={{ color: textColor }}>
+      <h2 className="mb-4 text-center" style={{ color: textColor }}>
         {name}
       </h2>
-      <h4 className="mb-4" style={{ color: textColor }}>
+      <p className="mb-4 text-center" style={{ color: textColor }}>
         {title}
-      </h4>
+      </p>
+
       <p className="mb-5">{description}</p>
       <Row xs={1} md={2} lg={3} className="g-4">
         {blog_posts.map((post) => (

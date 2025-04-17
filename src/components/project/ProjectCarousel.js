@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Card, Button, Carousel } from "react-bootstrap";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./ProjectCarousel.css";
@@ -12,6 +12,15 @@ const ProjectCarousel = ({ projectsSection, colorScheme }) => {
   const handleSelect = (selectedIndex) => {
     setActiveIndex(selectedIndex);
   };
+
+  // Automatically move to the next slide every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % project_items.length);
+    }, 5000);
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [project_items.length]);
 
   const CustomPrevIcon = () => (
     <span
@@ -43,20 +52,16 @@ const ProjectCarousel = ({ projectsSection, colorScheme }) => {
       <FaChevronRight />
     </span>
   );
+
   return (
     <Container>
-      <h2 className="mb-4 text-center" style={{ color: accent_color }}>
-        {title}
-      </h2>
-      <p className="mb-5 text-center">{description}</p>
-
       <Carousel
         activeIndex={activeIndex}
         onSelect={handleSelect}
         prevIcon={<CustomPrevIcon />}
         nextIcon={<CustomNextIcon />}
         indicators={false}
-        interval={null}
+        interval={null} // Disable built-in interval to use custom logic
         className="project-carousel"
       >
         {project_items.map((project) => (
