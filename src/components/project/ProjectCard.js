@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   };
   const navigate = useNavigate();
   return (
-    <Col key={project.id}>
+    <Col key={project.id} md={4} className="mb-4">
       <Card onClick={() => handleCardClick(project.slug)}>
         <Card.Img
           variant="top"
@@ -17,7 +17,8 @@ const ProjectCard = ({ project }) => {
         />
         <Card.Body className="d-flex flex-column">
           <Card.Title>{project.title}</Card.Title>
-          <Card.Text>{project.subtitle}</Card.Text>
+          <Card.Subtitle>{project.subtitle}</Card.Subtitle>
+          <Card.Text>{project.description}</Card.Text>
         </Card.Body>
       </Card>
     </Col>
