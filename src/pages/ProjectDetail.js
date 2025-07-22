@@ -31,6 +31,7 @@ const ProjectDetail = () => {
           style={{ height: "500px" }}
         />
       </div>
+      <p>{project.description}</p>
       <div
         className="blog-content"
         style={{ color: siteConfig.color_scheme.text_color }}
