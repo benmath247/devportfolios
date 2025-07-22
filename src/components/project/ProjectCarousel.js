@@ -99,8 +99,9 @@ const ProjectCarousel = ({ projectsSection, colorScheme }) => {
                       >
                         Visit Project
                       </Button>
+                      <br></br>
                       <Button
-                        href={`/project/${project.slug}`}
+                        href={`/projects/${project.slug}`}
                         style={{
                           backgroundColor: primary_color,
                           borderColor: primary_color,
