@@ -43,11 +43,16 @@ const BlogPost = () => {
           style={{ height: "500px" }}
         />
       </div>
-      <div
-        className="blog-content"
-        dangerouslySetInnerHTML={{ __html: htmlContent }}
-        style={{ color: siteConfig.color_scheme.text_color }}
-      />
+      <iframe
+        srcDoc={htmlContent}
+        title={post.title}
+        style={{
+          width: "100%",
+          height: "1000px",
+          border: "none",
+          color: siteConfig.color_scheme.text_color,
+        }}
+      ></iframe>
     </div>
   );
 };
